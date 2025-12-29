@@ -1,13 +1,20 @@
 # Review: 04-html
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-29 11:20
+**Review Date:** 2025-12-29 13:16
 
 ---
 
 ## Status: ✅ Submitted
 
 **Files submitted:** 6
+
+### Required Files
+
+- ❌ Missing: `portfolio-v1.html`
+- ❌ Missing: `portfolio-v2.html`
+- ❌ Missing: `portfolio-v2.css`
+- ❌ Missing: `portfolio-v3.html`
 
 ### Code Review
 
