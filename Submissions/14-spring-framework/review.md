@@ -1,7 +1,7 @@
 # Review: 14-spring-framework
 
 **Exercise:**  Exercise: Dependency Injection with Spring Framework
-**Review Date:** 2025-12-29 13:25
+**Review Date:** 2025-12-29 13:31
 
 ---
 
@@ -14,6 +14,8 @@
 - ❌ Missing: `Application.java`
 
 ### Code Review
+
+### Topic Score: 0 / 5 (0%)
 
 ---
 
