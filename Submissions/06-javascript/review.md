@@ -1,7 +1,7 @@
 # Review: 06-javascript
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 11:29
+**Review Date:** 2025-12-30 15:28
 
 ---
 
@@ -47,15 +47,15 @@
 
 📄 **form-validator.js**
    Path: `06-javascript/challenge-02/form-validator.js`
-   Lines: 110
+   Lines: 104
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
     - 💡 Consider using array methods (map, filter, reduce)
 
-   **Score: 2/5**
+   **Score: 4/5**
 
 📄 **tabs.html**
    Path: `06-javascript/challenge-04/tabs.html`
@@ -130,27 +130,27 @@
 
 📄 **type-checker.js**
    Path: `06-javascript/challenge-12/type-checker.js`
-   Lines: 53
+   Lines: 60
+
+    - ✅ Uses `const`/`let` (no `var`)
+    - ✅ Uses strict equality (`===`)
+    - ✅ Uses arrow functions
+    - ✅ Uses template literals
+    - 💡 Consider using array methods (map, filter, reduce)
+
+   **Score: 4/5**
+
+📄 **validate-password.js**
+   Path: `06-javascript/challenge-13/validate-password.js`
+   Lines: 80
 
     - ✅ Uses `const`/`let` (no `var`)
     - ✅ Uses strict equality (`===`)
     - ✅ Uses arrow functions
     - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
+    - ✅ Uses modern array methods
 
-   **Score: 3/5**
-
-📄 **validate-password.js**
-   Path: `06-javascript/challenge-13/validate-password.js`
-   Lines: 84
-
-    - ✅ Uses `const`/`let` (no `var`)
-    - ✅ Uses strict equality (`===`)
-    - 💡 Consider using arrow functions
-    - 💡 Consider using template literals for string interpolation
-    - 💡 Consider using array methods (map, filter, reduce)
-
-   **Score: 2/5**
+   **Score: 4/5**
 
 📄 **compose.js**
    Path: `06-javascript/challenge-14/compose.js`
@@ -164,7 +164,7 @@
 
    **Score: 4/5**
 
-### Topic Score: 48 / 65 (73%)
+### Topic Score: 53 / 65 (81%)
 
 ---
 
