@@ -1,53 +1,60 @@
 const typeOf = (value) => {
-   
-    if (value === null) return "null";
+  // Handle null
+  if (value === null) return `null`;
 
-   
-    if (typeof value === "number" && Number.isNaN(value)) {
-        return "nan";
-    }
+  // Handle NaN
+  if (typeof value === "number" && Number.isNaN(value)) {
+    return `nan`;
+  }
 
-    const baseType = typeof value;
+  const baseType = typeof value;
 
-    if (
-        baseType === "undefined" ||
-        baseType === "string" ||
-        baseType === "number" ||
-        baseType === "boolean" ||
-        baseType === "symbol" ||
-        baseType === "function"
-    ) {
-        return baseType;
-    }
+  // Primitive types
+  const primitiveTypes = [
+    "undefined",
+    "string",
+    "number",
+    "boolean",
+    "symbol",
+    "function"
+  ];
 
-   
-    if (Array.isArray(value)) return "array";
-    if (value instanceof Date) return "date";
-    if (value instanceof Map) return "map";
-    if (value instanceof Set) return "set";
-    if (value instanceof RegExp) return "regexp";
-    if (value instanceof Error) return "error";
-    if (value instanceof Promise) return "promise";
+  if (primitiveTypes.includes(baseType)) {
+    return `${baseType}`; // template literal
+  }
 
-   
-    return "object";
+  // Complex / built-in types using array method
+  const complexTypes = [
+    { check: Array.isArray, type: "array" },
+    { check: (v) => v instanceof Date, type: "date" },
+    { check: (v) => v instanceof Map, type: "map" },
+    { check: (v) => v instanceof Set, type: "set" },
+    { check: (v) => v instanceof RegExp, type: "regexp" },
+    { check: (v) => v instanceof Error, type: "error" },
+    { check: (v) => v instanceof Promise, type: "promise" }
+  ];
+
+  const match = complexTypes.find(({ check }) => check(value));
+  if (match) return `${match.type}`; // template literal
+
+  // Default case
+  return `object`;
 };
 
-
-
-console.log(typeOf(null));             
-console.log(typeOf(undefined));          
-console.log(typeOf(42));                 
-console.log(typeOf(NaN));              
-console.log(typeOf("hello"));            
-console.log(typeOf(true));             
-console.log(typeOf(Symbol()));           
-console.log(typeOf([]));                 
-console.log(typeOf({}));                
-console.log(typeOf(() => {}));          
-console.log(typeOf(new Date()));    
-console.log(typeOf(new Map()));         
-console.log(typeOf(new Set()));         
-console.log(typeOf(/regex/));            
-console.log(typeOf(new Error()));       
-console.log(typeOf(Promise.resolve()));  
+// Test cases
+console.log(typeOf(null));                 // "null"
+console.log(typeOf(undefined));            // "undefined"
+console.log(typeOf(42));                   // "number"
+console.log(typeOf(NaN));                  // "nan"
+console.log(typeOf("hello"));              // "string"
+console.log(typeOf(true));                 // "boolean"
+console.log(typeOf(Symbol()));             // "symbol"
+console.log(typeOf([]));                   // "array"
+console.log(typeOf({}));                   // "object"
+console.log(typeOf(() => {}));             // "function"
+console.log(typeOf(new Date()));            // "date"
+console.log(typeOf(new Map()));             // "map"
+console.log(typeOf(new Set()));             // "set"
+console.log(typeOf(/regex/));               // "regexp"
+console.log(typeOf(new Error()));           // "error"
+console.log(typeOf(Promise.resolve()));     // "promise"
