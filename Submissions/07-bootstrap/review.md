@@ -1,13 +1,18 @@
 # Review: 07-bootstrap
 
 **Exercise:**  Exercise: Build a Responsive Dashboard Layout
-**Review Date:** 2025-12-30 11:29
+**Review Date:** 2026-01-02 16:50
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 3
+**Files submitted:** 2
+
+### Relevance Check
+
+✅ Submission appears relevant to the exercise
+   Found keywords: container row col navbar 
 
 ### Code Review
 

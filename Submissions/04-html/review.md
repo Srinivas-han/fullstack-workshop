@@ -1,20 +1,24 @@
 # Review: 04-html
 
 **Exercise:** Exercise
-**Review Date:** 2025-12-30 11:29
+**Review Date:** 2026-01-02 16:49
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 6
+**Files submitted:** 7
+
+### Relevance Check
+
+Unable to check - no exercise file
 
 ### Required Files
 
-- ❌ Missing: `portfolio-v1.html`
-- ❌ Missing: `portfolio-v2.html`
-- ❌ Missing: `portfolio-v2.css`
-- ❌ Missing: `portfolio-v3.html`
+- ✅ Found: `portfolio-v1.html`
+- ✅ Found: `portfolio-v2.html`
+- ✅ Found: `portfolio-v2.css`
+- ✅ Found: `portfolio-v3.html`
 
 ### Code Review
 
@@ -29,25 +33,56 @@
 
    **Score: 4/5**
 
-📄 **portfolio.css**
-   Path: `04-html/portfolio.css`
-   Lines: 223
-
-   - ✅ CSS file present
-
-📄 **portfolio.html**
-   Path: `04-html/portfolio.html`
-   Lines: 122
+📄 **portfolio-v1.html**
+   Path: `04-html/portfolio-v1.html`
+   Lines: 124
 
     - ✅ Has `<!DOCTYPE html>`
     - ✅ Uses semantic HTML5 tags
     - ✅ Images have `alt` attributes
-    - ❌ Missing viewport meta tag
+    - ✅ Has viewport meta tag (mobile-friendly)
     - 💡 Add `lang` attribute to `<html>` tag
+    - 📌 **Version 1 (Raw HTML)**
+    - ✅ Pure semantic HTML (no styling)
 
-   **Score: 3/5**
+   **Score: 4/5**
 
-### Topic Score: 7 / 30 (23%)
+📄 **portfolio-v2.css**
+   Path: `04-html/portfolio-v2.css`
+   Lines: 223
+
+   - ✅ CSS file present
+
+📄 **portfolio-v2.html**
+   Path: `04-html/portfolio-v2.html`
+   Lines: 124
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Images have `alt` attributes
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - 💡 Add `lang` attribute to `<html>` tag
+    - 📌 **Version 2 (HTML + CSS3)**
+    - ✅ Links to CSS stylesheet
+
+   **Score: 4/5**
+
+📄 **portfolio-v3.html**
+   Path: `04-html/portfolio-v3.html`
+   Lines: 277
+
+    - ✅ Has `<!DOCTYPE html>`
+    - ✅ Uses semantic HTML5 tags
+    - ✅ Images have `alt` attributes
+    - ✅ Has viewport meta tag (mobile-friendly)
+    - ✅ Has `lang` attribute
+    - 📌 **Version 3 (Bootstrap)**
+    - ✅ Uses Bootstrap framework
+    - ✅ Uses Bootstrap classes
+
+   **Score: 5/5**
+
+### Topic Score: 37 / 40 (92%)
 
 ---
 
