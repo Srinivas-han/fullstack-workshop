@@ -1,3 +1,5 @@
+package Assignments;
+
 import java.util.Optional;
 
 public class SafeExecutor {
@@ -15,9 +17,15 @@ public class SafeExecutor {
         }
     }
 
+    
     public static void main(String[] args) {
 
-        System.out.println(safeExecute(() -> Integer.parseInt("123")));
-        System.out.println(safeExecute(() -> Integer.parseInt("abc")));
+        Optional<Integer> success =
+                safeExecute(() -> Integer.parseInt("123"));
+        System.out.println(success);   // Optional[123]
+
+        Optional<Integer> failure =
+                safeExecute(() -> Integer.parseInt("abc"));
+        System.out.println(failure);   // Optional.empty
     }
 }
